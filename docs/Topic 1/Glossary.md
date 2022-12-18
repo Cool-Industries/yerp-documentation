@@ -10,11 +10,11 @@
 - **Host:** Anyone responsible for overseeing YERP!'s spotting and responding to wellness checks. 
 -  **Inverted Gate:** Reverse on and off for a gate, so that the session flow will progress when the gate is marked as Off, and be prevented from starting and/or completed when it's marked as On.
 -  **Idle:** When spotting is active, and the activity sensor isn't indicating any activity. Measured in seconds. This is what's used to move the flow from spotting to seekinghelp, along with any user-added flags along the way.
--  **Last:** Refers to a session, spotting, or idle time that's not currently happening.
--  **Session:** The flow that happens in between when an area
+-  **Last Session:** Refers to a session, spotting, or idle time that's not currently happening.
+-  **Session:** The time in which a visitor is present in the area, and that area is being spotted.
 -  **Session Flow:** The process of moving from the beginning of a session to its completion, regardless of the outcome.
 -  **Spotting:** When an area is being actively monitored for indications of concern and potential emergency.
--  **This:** Refers to a session or spotting that's currently active in the present.
+-  **This Session** Refers to a session or spotting that's currently active in the present.
 -   **Timestamp:** UNIX Timestamp, which indicates seconds since January 1st, 1970. This is used for calculations, since Home Assistant can't do this directly in Datetime format.
 -   **Tutorial:** A session flow which includes on-screen and/or audio explanations of what's going on, for users unfamiliar with YERP. If temporary mode is turned on, only the next session flow will take place with these added prompts.
 - **Visitor:** Anyone being spotted by YERP!
