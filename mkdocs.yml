@@ -1,4 +1,4 @@
-site_name: obsidian-mkdocs template
+site_name: 'YERP! (Your Emergency Response Platform)'
 
 theme:
     name: 'material'
