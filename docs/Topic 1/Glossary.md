@@ -1,0 +1,21 @@
+# Glossary
+
+-   **Activity:** A true/false state for indicating a user being spotted is active and, in terms of the potential emergencies this framework is made to look for, not in need of assistance. Can currently be picked up by sensor by PIR or millimeter wave sensors, and can also be indicated manually by the user pressing a button.
+-   **Area:** The highest level container, designates an area that's being monitored. With its own set of physical devices and, inside of Home Assistant: automations, scripts, data, packages. If an area is enabled, the session flow can take place. If it's disabled, it can't.
+-   **Boilerplate:** A standardized template for a YERP area. When a new area is added via script, a new copy of the base boilerplate is created and configured to use that new area's name.
+-   **Complete:** The end of a session. Regardless of outcome, this indicates that spotting was engaged and has finished. Activates triggers to assess why the session was marked as completed, complete the appropriate response, and record the session metrics to the long-term database.
+-   **Datetime:** A standard format containing, in order: year, month, day, hour, minute, seconds and timezone offset.
+-   **Entity:** A Home Assistant term for an individual store of data; can be anything from sensors to on/off switches to text or date, etc.
+-   **Gate:** An open/close sensor like a door, but could also be something like a desk drawer or a fold-down table. The standard setup is configured so that in the case of an open/close sensor on a door and its frame, a gate marked as On means that this door is closed.
+- **Host:** Anyone responsible for overseeing YERP!'s spotting and responding to wellness checks. 
+-  **Inverted Gate:** Reverse on and off for a gate, so that the session flow will progress when the gate is marked as Off, and be prevented from starting and/or completed when it's marked as On.
+-  **Idle:** When spotting is active, and the activity sensor isn't indicating any activity. Measured in seconds. This is what's used to move the flow from spotting to seekinghelp, along with any user-added flags along the way.
+-  **Last:** Refers to a session, spotting, or idle time that's not currently happening.
+-  **Session:** The flow that happens in between when an area
+-  **Session Flow:** The process of moving from the beginning of a session to its completion, regardless of the outcome.
+-  **Spotting:** When an area is being actively monitored for indications of concern and potential emergency.
+-  **This:** Refers to a session or spotting that's currently active in the present.
+-   **Timestamp:** UNIX Timestamp, which indicates seconds since January 1st, 1970. This is used for calculations, since Home Assistant can't do this directly in Datetime format.
+-   **Tutorial:** A session flow which includes on-screen and/or audio explanations of what's going on, for users unfamiliar with YERP. If temporary mode is turned on, only the next session flow will take place with these added prompts.
+- **Visitor:** Anyone being spotted by YERP!
+- **Wellness Check:** When YERP!'s spotting threshold timer expires, this the prompt for human intervention to see if a visitor is alright.
